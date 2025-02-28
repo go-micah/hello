@@ -2,8 +2,11 @@ package main
 
 import "fmt"
 
-func main() {
-	message := "Hello, World"
-	fmt.Println(message)
+func getMessage() string {
+	return "Hello, World"
+}
 
+func main() {
+	message := getMessage()
+	fmt.Println(message)
 }
